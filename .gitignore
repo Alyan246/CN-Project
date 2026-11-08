@@ -1,0 +1,6 @@
+keys/
+build/
+*.key
+*.pcapng
+*.pcap
+__pycache__/
