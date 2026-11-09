@@ -1,5 +1,3 @@
-cd ~/cn-vpn
-cat > setup.sh <<'EOF'
 #!/bin/bash
 # One-shot setup for the VPN lab. Works on Fedora, Arch, Debian/Ubuntu, openSUSE.
 set -e
@@ -40,5 +38,3 @@ for c in tc wg wg-quick openvpn iperf3 tcpdump traceroute; do chk "command $c" "
 
 [ $ok -eq 1 ] && echo "Setup done. Next: sudo ./topo.sh" \
   || echo "Fix the MISSING items above (reboot once if a kernel module is missing), then rerun ./setup.sh"
-EOF
-chmod +x setup.sh

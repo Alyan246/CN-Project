@@ -34,3 +34,9 @@ measurement tools, `captures/` packet captures (not committed).
 Teardown: `sudo wg/down.sh && sudo ./teardown.sh`
 
 Supported: Fedora, Arch, Debian/Ubuntu, openSUSE. Use a normal terminal, not a Flatpak or sandboxed one.
+
+
+
+# TO RUN IN VSCODE TERMINAL DO: 
+# 1) flatpak-spawn --host bash
+# 2) sudo -S ./test.sh
