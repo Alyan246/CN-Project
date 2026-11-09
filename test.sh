@@ -15,7 +15,9 @@ sleep 1
 
 echo -e "\n Testing connection to $TARGET over active VPN..."
 if sudo ip netns exec ha ping -c 1 -W 2 $TARGET > /dev/null 2>&1; then
-    echo "   -> SUCCESS: VPN Connected and traffic is flowing!"
+
+    echo -e "   -> SUCCESS: VPN Connected and traffic is flowing!\n"
+    sudo ip netns exec ha ping -c2 $TARGET
 else
     echo "   -> FAILURE: Connection still failed."
 fi
